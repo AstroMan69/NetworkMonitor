@@ -9,7 +9,7 @@ import time
 #print("Your Computer Name is:" + hostname)    
 #print("Your Computer IP Address is:" + IPAddr) 
 
-ip_list = ['192.168.1.10', '192.168.1.144', '193.168.1.144']
+ip_list = ['IP1', 'IP2', 'IP3']
 for ip in ip_list:
     response = os.popen(f"ping {ip}").read()
     if "Received = 4" in response:
@@ -41,14 +41,14 @@ for ip in ip_list:
                             print("Server Unresponsive, please check server:",ip)
                             import smtplib
 
-                            sender = 'sabretest7@gmail.com'
+                            sender = 'Your Email'
 
-                            password = 'Maz1keen!'
+                            password = 'Your Password'
 
-                            receivers = ['darren.pratt@sabrerail.com']
+                            receivers = ['Receivers Email']
 
-                            message = """From: Sabre Test <sabretest7@gmail.com>
-                            To: Darren Pratt <darren.pratt@sabrerail.com>
+                            message = """From: Your name <Your Email>
+                            To: Receivers name <Receivers Email>
                             MIME-Version: 1.0
                             Content-Type: text/html
                             Subject: Test E-Mail
